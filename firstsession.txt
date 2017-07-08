@@ -1,0 +1,27 @@
+Computer Basics:
+-Complex machine made up of hardware and software
+-Hardware is the part that you can touch, and there are many parts like the motherboard, CPU, RAM, and hard disk
+-CPU, or Central Processing Unit, is like the human brain and calculates things fast
+-More CPU result in a faster device
+-RAM, or Random Access Memory, is like a scratchpad, or notes used temporarily
+-The hard disk stores information in the back, like notes that you can look back at
+
+-Software controls everything in a computer, or other device
+-Operating system is one part of the software, and it controls and turn the device on and off
+-Different operating systems for a phone and computer, like Windows and IOS
+-The program is a set of instructions, and an important part of the software
+-Consists of the instruction and data, or the command and argument (data needed for the instruction to be executed)
+
+Binary system:
+-Programming language
+-Unlike the decimal system, it consists of two bases, 0 and 1
+-Indefinite numbers, symbols, and letters can be represented using 0,1, place values, and exponents
+-Use powers of 2 (1,2,4,8,16...) to make up a certain number
+-To determine the numbers, you go from highest to lowest
+-Example is the number 10, or 1010 in the binary system
+-We started from the highest number below 10, which is 8. Adding 4 to 8 would be too high, so we use 2 instead. 
+8 and 2 to equal 10, so 10 would be 1010. Note that 1 and 4 aren't included in the equation, because they don't make up the number 10
+
+
+
+
