@@ -1,0 +1,34 @@
+Bit/Byte
+-A binary digit, carry values that are either 0 or 1
+-2 bits contain 4 binary values, 3 bits contain 8, 4 bits contain 16, and so on
+-8 bits can carry 256 values, which includes letters (lowercase and uppercase), numbers, and other symbols
+-8 bits are called a byte, 1024 bytes are a Kilo byte, 1024 X 1024 bytes are a  Mega byte, 1024 X 1024 X 1024 bytes are a Giga byte, 
+and so on (1024 X 1024 X 1024 X 1024 = a Tera byte)
+-Note that it is 1024, because this number is an exponent of 2
+-ASCII stands for American Standard Code for Information Interchange
+
+-A file is a group of bytes, and there are many different types including .txt, .jpg, .mp4, cmd.exe, .html, etc. Each has its own purpose. 
+For example, .jpg are used for photos.
+-A folder is a group of files, and can contain sub-folders
+
+Command Prompt
+-Used for typing commands
+-Important terms are cd which changes the directory (or folder) and md which makes a directory
+-\ is used to back to the root
+-/ is used for the absolute path. For example, typing cd JavaClass/Class/math/algebra takes you into the subfolder, algebra. 
+As we wrote, you list the path from JavaClass to algebra
+-../ are used for the relative path, if you don't want to type out everything. If you are in JavaClass/Class/math/algebra, 
+and type in cd ../../../, you go back to JavaClass.
+
+Eclipse
+-Used for making programs
+-IDE stands for Interactive Development Environment
+-To create a Java Project, go to File, New, and Java Project. Then, name it
+-Then, press File, New, and Class
+-Press public static void main
+-If you want to print a line, then write System.out.println and the word, or sentence you want to print in parenthesis and quotation marks. 
+In this case, print is the command, and the word/sentence you are printing is the data
+-The main is where the program starts
+-Press run to run the program. The word/sentence will appear
+-Go to Windows, Appearance, then Toolbar if you can't find the run button at the top
+-If you don't see the editor, you can click a icon on the left
