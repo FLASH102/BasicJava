@@ -1,0 +1,87 @@
+Variables: x, y, etc. 
+-Can change value
+
+Constant: 2, 3, etc.
+-Value doesn't change
+
+Data Types:
+-For Java, you need to specify the type of data of the variable. 
+Some common ones include int which are numbers without decimals, String, and double which are numbers with decimals. 
+-Format: Datatype VariableName = Value
+-For the String, you write the value using double quotes ""
+
+Syntax: Grammar for programming
+-Every statement/line of code should end in a semicolon ;
+-To declare variables, you need the datatype, a space, the variable, = sign, the value, and then a semicolon (ex: int grade = 7;)
+
+If/Else/Else If Statements:
+-Example: 
+int age = 16
+
+if( age > 18) {
+	System.out.println("You can vote in the election");
+}else if(age ==18){
+	System.out.println("Congratualtions, you can vote today");
+}else {
+	System.out.println("Sorry, you can't vote until you are 18 or older");
+}
+
+-Syntax to above program
+
+if( anything that evaluates to true/false){
+}else if (anything that evaluates to true/false){
+}else {
+Anything that does not match above
+}
+
+Explanation: In the program above, you have a certain value, or 16. When you run the program, it calculates to see if the given value, 
+or 16, is greater than 18. Since this is not true, it won't print what is in the block {}. Next, it checks to see if 16 is equal to 18. 
+Since this is not true, it won't print anything. Lastly, it checks the else statement. Since 16 is not greater than or equal to 18, it will execute the block, and print
+the line "Sorry, you can't vote until you are 18 or older".
+
+Equal Sign: When you have 1 equal, it means you are assigning a #. For example, age = 16. When you have 2 equals, it means comparison. For example, age == 18,
+which is asking if age is equal to 18. This will be answered with either yes or no/true or false.
+
+-When writing these statements, remember that you can have multiple instructions in the block. 
+
+Loops: 
+-One example is the For loop
+
+int i; 
+for(i=0, i,10; i ++) {
+	System.out.println("Hi" + (i+1));
+}
+
+Syntax: 
+for( initialization onetime ; condition which should return true or false ; do some increment which runs for each loop){
+     some statements which will execute as long as the condition is true
+}
+
+Explanation: 
+Step 1 (one time)
+-i = 0
+Step 2
+-i < 10 (0<10, this is true)
+Step 3
+-System.out.println("Hi" + (i+1) 
+Prints Hi +1 
+Step 4
+-i+=i+1
+Step 5
+-i < 10 (1<10, this is true)
+Step 6
+-System.out.println("Hi" + (i+2) 
+Prints Hi +2
+
+-This continues until i is 10, which is not gretaer than 10, and the loop will end
+
+
+Commenting: You can add comments by writing // comment
+
+Make sure to indent your programs correctly which helps read it easier and look for errors
+-Ctrl+Shift+F does auto indent
+
+Match the curly brackets
+Click the red circle to fix Syntax errors
+
+
