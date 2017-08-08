@@ -43,6 +43,8 @@ Equal Sign: When you have 1 equal, it means you are assigning a #. For example, 
 which is asking if age is equal to 18. This will be answered with either yes or no/true or false.
 
 -When writing these statements, remember that you can have multiple instructions in the block. 
+Multiple Comparisions 
+-ex: age > 13 && age < 19 (Must be true for both statements)
 
 Loops: 
 -One example is the For loop
