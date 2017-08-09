@@ -5,7 +5,7 @@ Github- Version Control System
 Basic Git Commands
 -Git status: Used to check status of any modifications, additions, or deletions in your repository
 -Git add *: Add the file to your local machine
--Git commit -m comment": Commit to your local repository
+-Git commit -m "comment": Commit to your local repository
 -Git push origin master: Adds to github
 
 Adding New Files (Notes)

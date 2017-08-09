@@ -1,0 +1,114 @@
+Take Input From User:
+Program
+import java.util.Scanner;
+
+public class Application {
+	public static void main(String[] args) {
+		System.out.print("first number:");
+		Scanner scanner = new Scanner(System.in);
+		int firstNumber = scanner.nextInt();
+		
+		System.out.print("second number:");
+		int secondNumber = scanner.nextInt();
+	}
+}
+
+-Declaring variable scanner of type Scanner
+-Calling method nextInt to get user input
+
+Writing a Program:
+-Have a mental picture of how the program will look like
+ex: Taking two numbers and writing the minimum and maximum. 
+When you run the program, it asks the first and second #, and prints it as the minimum # is: and the maximum # is:
+-Think about how to solve it, using examples
+ex: To find out which is maximum or minimum, you need to know which is less or more. FOr example, if you have the numbers 20 and 40, 
+you know 20 is the minimum because it is less than 40
+-Write out the logical conditions
+ex:if first number is less than second number then
+    minimum = first number
+    maximum = second number
+otherwise
+    minimum = second number
+    maximum = first number
+-Put into programming language. Write the syntax first. 
+ex:  if(){
+
+    }else{
+
+    }
+
+ex:  if( firstNumber < secondNumber){
+        System.out.println("Minimum is:" + firstNumber);
+        System.out.println("Maximum is:" + secondNumber);
+    }else{
+
+        System.out.println("Minimum is:" + secondNumber);
+        System.out.println("Maximum is:" + firstNumber);
+
+Condiitonal Program:
+-% is used for getting the remainder
+ex: 5 % 2 = 1
+    6 % 2 = 0
+    7 % 2 = 1
+    8 % 2 = 0
+Goal: find out whether a number is even or odd using % operation
+Pseudo logic: if number % 2 value is 0 then 
+		number is even
+	      otherwise
+		number is odd
+Code:
+    import java.util.Scanner;
+
+public class Application {
+
+	public static void main(String[] args) {
+		System.out.print("give number:");
+		Scanner scanner = new Scanner(System.in);
+		int number = scanner.nextInt();
+		
+		// number % 2 is zero it is even
+		// else it is odd
+		
+		if(number %2 == 0) {
+			System.out.println(number + " is even");
+		}else {
+			System.out.println(number + " is odd");
+		}
+
+	}
+}
+
+Loop Program:
+Goal: Take a number from user and print multiplication table up to 10
+
+Pseudo logic: 
+number = user input
+starting from 1 to 10
+	number * counter
+
+Syntax: 
+   for( ;   ;  ){
+
+    }
+Program:
+import java.util.*;
+public class Application {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("table number:");
+		int number = scanner.nextInt();
+		for(int i=1; i<=10; i++) {
+			int answer = number * i;
+			System.out.println(answer);
+		}
+	}
+}
+
+
+Eclipse Navigation:
+-Ctrl Shift F indents code
+-Alt F, press Enter twice to create a new Java project
+
+
+
+
