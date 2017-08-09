@@ -1,0 +1,25 @@
+{ } is the function, need } at end
+each line should have ; at end
+
+System.out.println(""); this prints the words in the quotation marks
+
+x = 2 (assignment)
+x == 2 (comparing, in this case it is true because we wrote x = 2 in the above line)
+Syntax: grammer for programmming, example is the ;
+Data types - - variable - - value
+ex: int age = 15
+
+Repetition:
+for loop
+
+int x;
+		for(x=0; x<10; x=x+1) {
+			System.out.println("Hello World");
+		}
+
+First, x=0
+It checks t0 make sure x<10, and because it is true, it prints the instruction (helloworld)
+Then, it goes back, does x=x+1, and adds 1 to 0 which makes x=1
+It checks again to make sure x<10, and because it is true, it prints it again
+Again, it adds 1 to 1, which makes it 2. It checks to make sure x<10, which is true, so it prints the line. 
+It stops printing after 10 times, because on the 11th time, x=10 which is not less than 10
