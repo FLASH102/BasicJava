@@ -1,0 +1,8 @@
+
+public class CarDataType {
+	String brand;
+	String color;
+	String wheeldrive;
+	int seat;
+	int year;	
+}
