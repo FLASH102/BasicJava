@@ -1,0 +1,60 @@
+OwnDataTypes:
+-Can use basic data types like int and String
+-Syntax:
+
+class yourdatatypename{
+}
+
+-You can add the data types that you want to include in the block
+ex:
+class Person{
+	int age;
+	String name;
+	int grade;
+	double height;
+}
+
+Using It:
+-Syntax: 
+datatype variable = new datatype ()
+
+ex: 
+Person person1 = new Person()
+
+-new indicates that you want to create a new data type for the data type that you created
+-After writing new, you can assign values 
+ex:
+Person person1 = new Person();
+person1.age = 10
+person1.name = Bhavika
+person1.grade = 4
+person1.height = 48.5
+
+-You can now print the variable by writing the variable name
+ex:
+System.out.println( person1.name)
+System.out.println( person1.name "age is" person1.age)
+
+Program:
+-You need two classes in one project to create your own data type
+	-First class is where you make your own data type. Note: public static void main should be unchecked
+	-Second class is the application, where you try out your data type. Note: public static void main should  be checked
+-You need to classes so that the second program can follow the instructions from the main method in the first program 
+
+Common mistakes:
+-You need to declare a variable before using it
+ex: 
+public class application
+	public static void main(String[] args){
+		System.out.println(age); }
+-In the example above, you need to write int age = 10; to define/declare it before using it 
+-You will know if you have this mistake if Eclipse gives a message in red saying ___ cannot be resolved to a variable
+
+-Make sure there are the right number of curly brackets, and each one starts and ends with {}
+
+-Use ; in the right place
+	-Statements with if don't need ; at the end, before the block
+		ex: if(x=0) {
+		}
+
+
