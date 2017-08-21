@@ -1923,3 +1923,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.core.resources 4 567 2017-08-21 15:53:15.205
 !MESSAGE The project description file (.project) for 'MyHomeWorkDataSample' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 4 567 2017-08-21 15:56:26.964
+!MESSAGE The project description file (.project) for 'SchoolTypeApp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
