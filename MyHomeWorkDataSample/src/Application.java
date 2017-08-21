@@ -1,0 +1,33 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("Car Description");
+
+	CarDataType c1 = new CarDataType();
+		c1.brand = "FordMustang";
+		c1.color = "Red";
+		c1.drivetrain = "RWD";
+		c1.type = "Sports car";
+		c1.seat = 4;
+		c1.year = 2017;
+		
+	CarDataType c2 = new CarDataType();
+		c2.brand = "ToyotaHighlander";
+		c2.color = "White";
+		c2.drivetrain = "AWD";
+		c2.type = "Sport utility vehicle";
+		c2.seat = 8;
+		c2.year = 2015;
+
+		System.out.println(c1.brand);
+		System.out.println(c1.color);
+		System.out.println(c1.drivetrain);
+		System.out.println(c1.type);
+		System.out.println(c1.seat);
+		System.out.println(c1.year);
+		
+	}
+
+}
