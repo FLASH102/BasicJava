@@ -1,0 +1,107 @@
+Syntax Review:
+-if 
+
+if( condition which can say true/false){
+	//statements
+}
+
+-if/else if/else
+
+if(...){
+}else if(...){
+}else if(...){
+//there should only be one if, and one else. There can be a countless number of else ifs.
+}else{
+}
+
+-for( ; ; ){
+}
+
+-3 blocks in the ()
+
+-Custom data type 
+
+class YourDataType{
+}
+
+-Write properties of the data type in the {}
+
+-Using data type
+
+//data type   variableName = new datatype ();
+
+Class,Object,Instance:
+-Technical terms
+	-Class-- creating your own data type
+		-Other words: Template, recipe, blueprint, cookie cutter
+		-Should be a singular noun
+	-Object/Instance-- creating a variable for your data type
+		-If the class is a cookie cutter, think of the object/instance as a cookie
+		-Can have countless objects for a specific class
+
+Actions/Methods/Functions/Behavior
+-Different types of actions
+	-Doesn't take input, or give back output
+		ex: sleep
+Syntax:
+void actionName(){
+
+}
+
+	-Takes inputs, doesn't give back outputs
+		ex: write your name
+Syntax:
+void actionName(inputVariables){
+
+}
+
+	-Doesn't take input, gives output
+		ex: tell the number of books read
+Syntax:
+Datatype actionName(){
+    return variableOfReturnDataType;
+}
+
+
+	-Takes input, gives output
+		ex: use money to get clothes
+Syntax:
+Datatype actionName(inputVariables){
+    return variableOfReturnDataType;
+}
+
+Important Stuff for Syntax:
+inputVariables: comma separated variables. Every variable will be preceded by its data type
+    (int x,int y)
+Datatype : When you are returning (output) from a action you specify just the data type ( not variable)
+
+variableOfReturnDataType: when there is a output from action you should have return with actual value.
+
+-Actions are verbs, class is a Noun
+	-actions are lowercase, class is uppercase
+
+CalculatorSample:
+-Create java project
+	-Have two classes, one with public static void main (has the main method)
+	and one without (won't have main)
+-Create a data type in the class that doesn't have main
+	-Use actions
+	-Ex:    
+ class Calculator{
+        int multiply(int x, int y){
+            int z;
+            z = x*y;
+            return z;
+        }
+-You can do addition,subtraction,multiplication,division, etc.
+
+Using the method you just created:
+-Go to the class with the main method
+Type: Calculator a = new calculator();
+	int quotient;
+	quotient = a.multiply(4,6);
+	System.out.println(quotient);
+-Remember to declare the quotient before using it
+-Technical term for action is method or function
+
+-Scoping means the variable declared in a code block is "alive and dead" between the {}
