@@ -1,0 +1,13 @@
+
+public class Car {
+	String name;
+	int power;
+
+	void start() {
+		System.out.println("Starting" + name);
+	}
+
+	void stop() {
+		System.out.println("Stopping" + name);
+	}
+}

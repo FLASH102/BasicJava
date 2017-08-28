@@ -1,0 +1,54 @@
+Java Terminology:
+-Class -- creating a data type
+-Object -- variable
+-Fields -- Class properties
+-Methods -- actions
+
+Class fields and methods:
+-Methods have access to the fields as they are defined together in a class
+-You can write variable names in stop/start or other methods
+	ex: 
+	void start() {
+		System.out.println("starting the " + name + " which has " + horsepower + " horsepower");
+
+	Prints: starting the BMW which has 300 horsepower
+-Called object variables because you can still access it even though we haven't defined the name. 
+This can occur because it is still part of the class.
+
+Boolean variable:
+-Used for data values yes or no
+-Say you have a program where you are starting and stopping the car. What would happen if you start the car twice in a row?
+There would be an error, and we are going to include that in the program. To do this, you need to remember if the car has already started.
+You can use the boolean varible to do this. 
+ex: 
+public class Car {
+	String name;
+	int power;
+boolean hasStarted1 = false;
+	void start()
+	{
+		if(hasStarted1)
+		{
+			System.out.println("Error--you have already started the " + name + ". Please stop before starting again.");
+		}
+		else
+		{
+			System.out.println("Starting the " + name);
+			hasStarted1 = true;
+		}
+	}
+	void stop()
+	{
+		if(hasStarted1) 
+		{
+			System.out.println("Stopping the " + name);
+			hasStarted1 = false;
+		}
+	else
+		System.out.println("Error--please start the car before stopping");
+	}
+}
+-In this program, you created a boolean variable called hasStarted1. In the beginning, it is false, meaning that the car hasn't turned on.
+If the car already started, it will say error. But, it hasn't as the statement is false. So instesd it will execute the else statement.
+After that, hasStarted1 = true, as the car has started. If you try to start it agaiin, because hasStarted1 = true, it will execute 
+the if statement. A similar thing happens for the stop field. 
