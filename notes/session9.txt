@@ -1,0 +1,50 @@
+Review:
+-Class is a template, blueprint, cookie cutter recipe, cutson data type
+-Contains fields which are properties, and methods, or actions
+-Singular noun
+	Syntax:
+	  class Persion{
+
+    }
+
+-Object/instance
+-Creating a variable is like creating a cookie from a cookie cutter
+-Another name for variable
+	Syntax: 
+	Person p1 = new Person();
+
+-Fields are defined variables
+-Called instance variables
+	Syntax: 
+	class Person{
+        String name;        // field name of data type String.
+    }
+
+-Methods are actions or verbs
+-Can access fields in the class
+	Syntax:
+ 	class Car{
+
+        void start(){
+            System.out.println("Starting car");
+        }
+    }
+
+-Methods/Fields: 
+	Syntax: 
+	void start(){
+            System.out.println("starting:" + name)      // name is defined in the class and method can access it.
+        }
+    }
+
+-Boolean variable is for yes or no
+	Syntax:  
+	boolean isStarted = false;  // not started.
+	isStarted = true;       // started.
+
+Encapsulation:
+-One of the Object Oriented Programming (OOPs), which Java is based on
+-First principle is packaging the related data and behavior, or putting the related fields and methods together
+-Second principle is hiding the details, or making things private
+	-You do this by writing private before a certain property, in the main class
+	-When you try to use it in the Application class, it will appear as it is not visible
