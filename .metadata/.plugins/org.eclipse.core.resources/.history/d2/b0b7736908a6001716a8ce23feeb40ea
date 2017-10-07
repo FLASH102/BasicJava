@@ -1,0 +1,15 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+Person p1 = new Person(); 
+	p1.age = 10;
+	p1.name = "Bob";
+	
+Person p2 = new Person();
+	p2.age = 21;
+	p2.name = "Donald";
+	}
+}

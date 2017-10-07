@@ -1,0 +1,26 @@
+Misconceptions:
+-Name is a variable, start/stop are methods
+-Objects: c1 and c2 are created
+	-Accessed by calling them: c1.name = "Bob";
+-Methods are called by invoking them: c1..start();
+
+Constructors:
+-Have a certain name or quality every time you call on it
+
+-Class called Person (without main)
+	Have name, age, height
+-In the main, when you create your data type, you need to put in p1.name
+	If you don't have this, it will come up as null
+-Constructor
+Person p1 = new Person("Bob");
+
+-Now, even if you don't call on the field, it won't come as null, it will include the name Bob
+
+
+-Class Person
+
+Person(String inputname) {
+name = input name
+}
+
+-Assign the inputname to name 

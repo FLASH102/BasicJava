@@ -9,7 +9,8 @@ public class Application {
 		c.start();
 		c.start();
 		c.stop();
-
+//if you call the method igniteChamber or pumpGas, it won't work because they are private. 
+//You can only call upon the public methods if it is a different class.
 
 		Car c1 = new Car();
 		c1.name = "BMW";
