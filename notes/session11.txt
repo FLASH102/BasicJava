@@ -24,3 +24,12 @@ name = input name
 }
 
 -Assign the inputname to name 
+
+int age;
+	String name;
+
+	Person(String name) {
+		this.name = name;
+	}
+
+-This. name is specifies which name you are referring to. In this case, it is the very first one
