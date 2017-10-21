@@ -1,0 +1,12 @@
+
+public class Player {
+ int getScore(int pointsScored) {
+		int pointsScored = 100;
+		return pointsScored;
+	}
+
+	void play() {
+	
+	}
+
+}

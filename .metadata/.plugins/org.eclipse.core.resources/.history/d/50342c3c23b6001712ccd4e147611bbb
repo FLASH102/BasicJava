@@ -1,0 +1,11 @@
+
+public class Player {
+	int getScore(int pointsScored) {
+		return 100;
+	}
+
+	void play() {
+	
+	}
+
+}
