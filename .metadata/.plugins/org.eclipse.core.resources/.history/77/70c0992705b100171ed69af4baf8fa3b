@@ -1,0 +1,16 @@
+
+public class Person {
+	String name;
+	int age;
+
+	Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	boolean canDrive(age <= 19) {
+		return true;
+		System.out.println("yes, you can drive")
+	}
+}
+

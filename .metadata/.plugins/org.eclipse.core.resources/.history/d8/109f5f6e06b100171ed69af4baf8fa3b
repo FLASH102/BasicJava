@@ -1,0 +1,13 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person p1 = new Person("Bhavika", 13);
+		p1.canDrive();
+		Person p2 = new Person("Momoji", 66);
+		p2.canDrive();
+
+	}
+
+}
