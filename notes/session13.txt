@@ -1,0 +1,81 @@
+Method Signature:
+1. Method name
+	ex: readBook
+2.Any input values?
+	ex: input called bookName, ask for the data type
+3. Output values?
+	ex: number of minutes read
+
+int readBook(String bookName) {
+	return 10;
+}
+
+-Write the method name
+-Have the paranthesis
+-Curly brackets
+-Add the input value and its data type
+-Add the output value
+-Complete the logic, and add int for the output value
+
+Method yes/no:
+Name- canDrive
+input: none
+output: yes or no
+
+
+    class Person{
+        String name;
+        int age;
+
+        boolean canDrive(){
+            if(age >=15){
+                return true;        // can drive.
+            }else{
+                return false;       // cannot drive.
+            }
+        }
+    }
+
+-Add the logic
+
+    public class Application{
+        public static void main(String[] args){
+            
+            Person p1 = new Person();
+            p1.name = "bob";
+            boolean drivable =  p1.canDrive();
+
+        }
+
+
+-When calling on methods in the main class, you write the ()
+-For normal variables, you assign something
+
+ex: p1.name = "Don";
+    p1.readBook();
+-Add the input if applicable
+	int numberOfMinutesRead = p1.readBook("Percy Jackson", 60)
+-There are two inputs, one for the book read, and one for the minutes read
+-Since you are giving the number of minutes read back, 
+you should add int numberOfMinutesRead = in the beginning
+
+Constructor
+
+    class Student{
+
+        String name;
+        int age;
+
+        Student(String name, int age){
+            this.name = name;
+            this.age = age;
+        }
+    }
+
+-if you want to have the same variable names, it is important to add this.______ 
+to specify the variable
+	-The this.name refers to the String name; outside of the constructor
+
+
+
+
