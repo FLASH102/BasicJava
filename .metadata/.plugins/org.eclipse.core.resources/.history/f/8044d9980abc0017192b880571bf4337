@@ -1,0 +1,37 @@
+
+public class Student {
+	String name;
+	int age;
+
+	Student(String name) {
+		this.name = name;
+		// Constructor is a special method that has the class name as the method
+		// name, and doesn't
+		// have a return type (void, int, etc.)
+	}
+
+	Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	void readBook(String bookName, int minutesRead, int pagesRead) {
+		checkOut(bookName);
+		readingBook(bookName, minutesRead, pagesRead);
+		returnBook(bookName);
+	}
+
+	void checkOut(String bookName) {
+		System.out.println(name + " is checking out " + bookName + ".");
+	}
+
+	void readingBook(String bookName, int minutesRead, int pagesRead) {
+		System.out.println(
+				name + " is reading " + pagesRead + " pages of " + bookName + " for " + minutesRead + " minutes.");
+	}
+
+	void returnBook(String bookName) {
+		System.out.println(name + " is returning " + bookName + ".");
+	}
+
+}
