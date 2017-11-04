@@ -1,0 +1,24 @@
+
+public class Food {
+	String name;
+	int serving;
+
+	Food(String name, int serving) {
+	}
+
+	void makeDinner(String foodDish) {
+
+	}
+
+	private void buyFood(String foodDish) {
+		System.out.println("I am buying the ingredients to make " + foodDish);
+	}
+
+	private void cookFood(String foodDish) {
+		System.out.println("I am cooking " + foodDish);
+	}
+
+	private void serveFood(String foodDish, int serving) {
+		System.out.println("I am serving " + foodDish + " for " + serving + " people");
+	}
+}

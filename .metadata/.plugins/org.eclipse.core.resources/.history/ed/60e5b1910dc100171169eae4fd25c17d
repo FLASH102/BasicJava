@@ -1,0 +1,18 @@
+
+public class Food {
+	String name;
+	int age;
+
+	Food(String name, int age) {
+	}
+	
+	void goToMovie(String movieName){
+		
+	}
+	
+	private void buyTicket(String movieName) {
+		System.out.println("I am buying the tickets to see " + movieName);
+	}
+	
+	private void 
+}

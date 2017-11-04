@@ -1,0 +1,18 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+Student s1 = new Student("Bhavika", 7);
+s1.writeEssay("Environmental Issues");
+
+Student s2 = new Student("Bob", 11);
+s2.writeEssay("Pyschological Effects");
+
+Food f1 = new Food("Spaghetti", 3);
+
+	}
+	
+
+}

@@ -1,0 +1,11 @@
+
+public class Movie {
+String name;
+int age;
+
+Movie(String name, int age) {
+	
+}
+
+void writeEssay()
+}
