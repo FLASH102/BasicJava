@@ -1,0 +1,52 @@
+Constructor Overloading:
+
+-Constructor --same method name as class, no return type
+	-Use only when creating object (not a regular method)
+
+-Method defining
+	-include name, inputs, outputs, instructions
+Ex:
+Name: readBook
+Inputs: bookName, minutesToRead
+Outputs: none
+Instructions: checkoutFromLibrary, readTheBook, returnToLibrary
+
+-Methods calling other Methods
+-Create method for the instructions, and put in the main method readBook
+
+    class Student{
+        String name;
+        
+        Student(String name){
+            this.name = name;
+        }
+
+        void readBook(String bookName){
+            checkOutFromLibrary(bookName);
+            readTheBook(bookName);
+            returnBookToLibrary(bookName);
+        }
+
+        void checkOutFromLibrary(String bookName){
+            System.out.println("Checking out book:" + bookName + " from library");
+        }
+
+        void readTheBook(String bookName){
+            System.out.println("Read the book out book:" + bookName + " now");   
+        }
+
+        void returnBookToLibrary(String bookName){
+            System.out.println("Returning the book:" + bookName + " back to library");
+        }
+    }
+
+    class Application{
+        public static void main(String[] args){
+            Student s1 = new Student("Joe");
+            s1.readBook("Harry Potter");
+        }
+    }
+
+-When hiding the details, simply add private before the data type (void, in this case)
+
+
