@@ -1,0 +1,62 @@
+Method Overloading:
+-Create a student class, and application class
+-Have a variable called name
+	-Create a constructor for name
+-Create a method called readBook, with the input value being the bookName
+-Create another method, with the same name readBook, this time taking two parameters or inputvalues
+	-bookName, minutesToRead
+-Create another method with three parameters
+	-readBook( bookName, minutesToRead, pagesToRead)
+-Create a method called readBook where there are no parameters
+
+  public class Student{
+        void readBook(String bookName){
+            System.out.println("Reading book:" + bookName)
+        }
+
+        void readBook(String bookName, int minutesToRead){
+            System.out.println("Reading book:" + bookName + " for " + minutesToRead);
+        }
+
+        void readBook(String bookName, int minutesToRead, int pagesToRead){
+            System.out.println("Reading book:" + bookName + " for " + minutesToRead + " and " + pagesToRead);
+        }
+
+        void readBook(){
+            System.out.println("Reading my own book for whatever minutes I want and pages");
+        }
+    }
+
+-Define these methods and parameters in the application class
+
+  public class Application{
+        public static void main(String[] args){
+            Student s1 = new Student();
+            s1.readBook("Harry Potter");  
+            s1.readBook("Harry Potter", 30);   
+            s1.readBook("Harry Potter", 30, 20);   
+            s1.readBook();    
+        }
+    }
+
+-The methods runs the parameter with the appropriate method in Student class
+-Method overloading: Allows many methods with the same now, a long as the parameters are different
+
+For parameters, the datatype also matters
+Ex:     class Student{
+        void readBook(String bookName, int minutesToRead){
+
+        }
+        
+        void readBook(String bookName, int pagesToRead){
+
+        }
+    }
+
+-This will not work, as String and int are in the same place- 
+It will work if you switc the order for the second method
+
+
+Char data type (short for character):
+-Stores a single character
+Ex:    char grade = 'A';
