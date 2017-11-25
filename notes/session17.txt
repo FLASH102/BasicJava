@@ -1,0 +1,71 @@
+Variables Recap:
+-One word
+-Must define before use
+-Cannot define again if using the same variable later
+-Variable is alive in between the defined area and the closing curly bracket
+-You can define the same varibles in different methods
+
+
+Steps for progamming/solving a problem:
+1. You are asked to do something
+2. Decide the appropriate class
+3. Figure out what you need to write (I need to write a method)
+4. Decide the name of the method, generally a verb
+5. Find out the inputs
+6. Find the outputs, if applicable
+7. Type in syntax
+8. Fill inputs
+9. Type output data
+10. Put 0, or dummy value for output. Logic will be done later
+11. Create an object in main method class
+12. Call method, add any parameters that might need to be filled; print
+13. Run program to make sure dummy value is printed
+14. Add real logic
+15. Run to see if the program works. 
+
+Example:
+1. Create a program to find the absolute value of a number
+2. Math class
+3. I need to write a method
+4. Method name: findAbsoluteValye
+5. Inputs = number
+6. Output = absolute value (number)
+7. public class Math {
+	int findAbsoluteValue() {
+		
+}
+8. public class Math {
+	int findAbsoluteValue(int num) {
+	
+}
+9/10. public class Math {
+	int findAbsoluteValue(int num) {
+		return 0;
+}
+11. public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Math m1 = new Math();
+
+12/13. public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Math m1 = new Math();
+		int result = m1.findAbsoluteValue(-12);
+		System.out.println("The absolute value is " + result);
+14/15.public class Math {
+
+	int findAbsoluteValue(int num) {
+
+		int absolute;
+		if (num < 0) {
+			absolute = num * -1;
+		} else {
+			absolute = num * 1;
+		}
+		return absolute;
+	} 
