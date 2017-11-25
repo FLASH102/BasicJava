@@ -1,0 +1,77 @@
+Static methods:
+-Methods that do not use any class variables
+-Only use when you do not need to access any class variables for a method
+
+example:
+  class Math{
+
+        static int add(int num1, int num2){
+            return num1+num2;
+        }
+    }
+
+-When calling on the variable, you can either craete an object and call on it, or call on the class itself
+
+example: 
+    class Application {
+        public static void main(String[] args){
+            Math m1 = new Math();
+            m1.add(20,30);
+
+            // calling on class
+            Math.add(20,30);
+        }
+    }
+
+-If you try to use class variables in static method, an error will appear
+-Non static method example: use previous numbers and add them
+
+    class Math{
+        int previousResult = 0;
+
+        int addSpecial(int input){
+            int result = previousResult + input;    // add the current to previous number
+            previousResult += result;               // remember what we gave back ( 2, 5, 9 )
+            return result;                          // give the total
+        }
+    }
+
+Reusing:
+
+-JDK (Java Developer Kit)
+-Built in methods for use
+
+-Reusing something, but making changes as well
+-Inheritance (another Object Oriented Principle, or OOP)
+
+example:
+
+-Animal and Dog class
+    class Animal{
+        void feed(){
+            System.out.println("animal is eating.");
+        }
+    }
+ class Dog{
+    }
+
+-Create main method class and call on feed method for Dog
+
+    class Application{
+        public static void main(String[] args){
+
+            Dog d1 = new Dog();
+            d1.feed();
+        }
+    }
+
+-Error will occur, as there is no feed in Dog class
+-Change Dog class to Dog extends Animal
+
+    class Dog extends Animal{
+        // Nothing in it.
+    }
+
+-Will work now! 
+-Inheritance takes everything in Animal class and extends it to the Dog class
+
