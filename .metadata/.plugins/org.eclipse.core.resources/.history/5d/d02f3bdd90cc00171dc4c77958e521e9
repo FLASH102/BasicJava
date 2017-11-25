@@ -1,0 +1,13 @@
+
+public class Math {
+	static int addNumbers(int x, int y) {
+		int z = x + y;
+		return z;
+	}
+	int previousNum;
+	int addSpecial(int num1) {
+		return result;
+		result = previousNum + num1;
+		result = previousNum;
+	}
+}

@@ -1,9 +1,0 @@
-
-public class Student {
-String name;
-int grade;
-
-Student(String name, int grade) {
-	
-}
-}

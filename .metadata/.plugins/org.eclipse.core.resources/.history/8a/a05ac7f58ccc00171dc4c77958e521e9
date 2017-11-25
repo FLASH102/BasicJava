@@ -1,0 +1,6 @@
+
+public class Math {
+	int addNumbers(int number1, int number2) {
+		return 0;
+	}
+}

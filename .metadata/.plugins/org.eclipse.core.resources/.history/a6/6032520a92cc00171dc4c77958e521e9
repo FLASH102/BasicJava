@@ -1,0 +1,17 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Math m1 = new Math(); //Do not need m1 since static was added
+		int z = Math.addNumbers(-2, 3);
+		System.out.println(z);
+		
+		Math m2 = new Math();
+	int answer = m2.addSpecial(2);
+	int answer = m2.addSpecial(4);
+	System.out.println(answer);
+		
+	}
+
+}
