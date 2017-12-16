@@ -1,0 +1,64 @@
+-Int for small numbers, Long for big
+-Double for big decimal points (3.111111), Float for small (3.1)
+-Ceiling - number to highest digit - similr to rounding
+-Floor - number to lowest digits - similar to rounding
+
+Java Developer Kit (JDK)
+
+-Packages: predefined code for reuse
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		double piFromJDK = java.lang.Math.PI;
+		System.out.println("PI from JDK:" + piFromJDK);
+		
+		double myPIValue = Math.PI;
+		System.out.println("My PI value:" + myPIValue);
+
+	}
+}
+
+-Here, the lang is the package, and Math is the class
+Array
+-Using multiple numbers []
+ int age;
+
+    int favNumbers = new int[4];       // you can have 4 values.
+    favNumbers[0] = 1;      // first number is at 0
+    favNumbers[1] = 12;      // second number is at 1 .
+    favNumbers[3] = 5;      // last number is at 3 
+
+
+Graphics:
+-Frame creates graphics application - basis 
+-Exists in package java.awt 
+-awt means abstract windowing toolkit
+-When you run, nothing happens as this is just the frame, you have not done anything yet
+
+- Set size sets dimensions of window when opened (in pixels)
+-Need setVisible, so that you can actually see the windown pop up
+
+public class Application{
+    public static void main(String[] args){
+        java.awt.Frame f = new java.awt.Frame();
+        f.setSize(500, 500);
+        f.setVisible(true);
+    }
+}
+
+-This is GUI (Graphic User Interface)
+-Program cannot close yet
+-To add a window title, put the name in quotations marks
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		java.awt.Frame f = new java.awt.Frame("Sairama");
+		f.setSize(500, 500);
+		f.setVisible(true);
+	}
+
+}

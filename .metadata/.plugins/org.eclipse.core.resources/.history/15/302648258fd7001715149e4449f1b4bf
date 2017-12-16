@@ -1,0 +1,13 @@
+
+public class Math {
+	
+static int addNumbers(int num1, int num2) {
+	 int z = num1 + num2;
+	 return z;
+	 
+ }
+
+int findAbsoluteValue(int num1) {
+	return 0;
+}
+}

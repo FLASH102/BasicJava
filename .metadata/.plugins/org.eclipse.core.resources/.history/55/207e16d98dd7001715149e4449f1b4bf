@@ -1,0 +1,12 @@
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Math m1 = new Math();
+int result = m1.addNumbers(8,10);
+System.out.println(num 1 + " + " + num 2 + " = " + result);
+
+	}
+
+}
