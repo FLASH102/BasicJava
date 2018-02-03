@@ -1,0 +1,19 @@
+Calculator Class
+
+-Previous: Added a frame, set the dimensions and set visisble to true
+
+-To close the window
+
+f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+-Next, we must add a panel and buttons for the calculator
+// create Panel
+		JPanel p = new JPanel();
+		p.setBackground(Color.BLUE);
+		f.add(p);		// add panel to the 
+		f.setVisible(true);
+
+// create button
+		JButton b = new JButton();
+		b.setText("1");
+		p.add(b);	// adding button to panel

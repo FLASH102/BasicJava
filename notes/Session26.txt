@@ -1,0 +1,49 @@
+Switch method - alternative to if, else if, else 
+
+Ex: if loop
+public class Person {
+
+	void eatFruit(int fruitType){
+        if(fruitType ==1 ){
+            System.out.println("Eating apple.");
+        }else if(fruitType == 2){
+            System.out.println("Eating banana.");
+        }else if(fruitType == 3){
+            System.out.println("Eating orange.");
+        }else if(fruitType == 4){
+            System.out.println("Eating grape.");
+        }else if(fruitType == 5){
+            System.out.println("Eating pineapple.");
+        }else{
+            System.out.println("Dont' know which fruit.");
+        }
+    }
+
+Switch: Can switch to cases, and default as else
+Break statement stops the case at the end
+
+public class Person {
+
+	void eatFruit(int fruitType) {
+		switch (fruitType) {
+		case 1:
+			System.out.println("Eating apple.");
+			break;
+		case 2:
+			System.out.println("Eating banana.");
+			break;
+		case 3:
+			System.out.println("Eating orange.");
+			break;
+		case 4:
+			System.out.println("Eating grape.");
+			break;
+		case 5:
+			System.out.println("Eating pineapple.");
+			break;
+		default:
+			System.out.println("Dont' know which fruit.");
+			break;
+		}
+	}
+}

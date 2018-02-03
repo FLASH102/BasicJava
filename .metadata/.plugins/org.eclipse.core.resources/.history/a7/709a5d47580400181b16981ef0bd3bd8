@@ -1,0 +1,15 @@
+package basicjava;
+
+public class Appplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student s1 = new Student("Bob");
+		Student s2 = new Student();
+		
+		s1.play(1);
+		
+		System.out.println();
+	}
+
+}

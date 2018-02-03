@@ -1,0 +1,28 @@
+package basicjava;
+
+public final class Student {
+
+	String name;
+
+	Student(String name) {
+		this.name = name;
+
+	}
+
+	Student() {
+
+	}
+
+	int play(int gameType) {
+		if (gameType == 1) {
+			System.out.println("I am playing basketball.");
+		} else if (gameType == 2) {
+			System.out.println("I am playing soccer.");
+		} else {
+			System.out.println("I do not know what I am playing.");
+		}
+	
+		int minutesPlayed;
+		return minutesPlayed = 10;
+	}
+}

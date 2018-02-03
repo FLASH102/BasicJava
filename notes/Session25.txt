@@ -1,0 +1,123 @@
+Calculator App
+
+// Importing Color and other related classes
+import java.awt.*;
+//Importing Swing apis (JFrame,JPanel,JButton) classes
+import javax.swing.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+
+		// Create frame which holds panels
+		JFrame frame = new JFrame();
+		frame.setSize(1000, 1000);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		// create Panel
+		JPanel numberPanel = new JPanel();
+		numberPanel.setBackground(Color.BLACK);
+		// add panel to the frame
+		frame.add(numberPanel); 
+
+		// create button
+		JButton numberButton = new JButton();
+		numberButton.setText("1");
+		// adding button to panel
+		numberPanel.add(numberButton); 
+
+		// Make visible at the end so that button and panel will show up
+		frame.setVisible(true);
+	}
+}
+
+-We need to add 10 buttons
+We can use a loop
+
+// create 10 buttons
+		for(int i=0; i<10; i++) {
+			// setText method takes String data type and we have i here as Int
+			// Again we need to look for a method for converting a number in to string
+			// Looks like there exists one called Integer class
+			String buttonText = Integer.toString(i);
+			// Above method converts a Int data type to String type
+			// Input: number of data type Int
+			// Output: String data type
+			JButton numberButton = new JButton();
+			numberButton.setText(buttonText);
+			// adding button to panel
+			numberPanel.add(numberButton); 
+		}
+
+-You can use set font to alter the text
+
+Font font = new Font("Serif", Font.BOLD, 66);
+	numberButton.setFont(font);
+
+
+-Now, we want a nice layout to mimic the actual calculator app
+
+    // Create layout with 4 rows and colums to show the buttons
+    GridLayout numberPanelLayout = new GridLayout(4, 3);
+    // Note: You will be setting this layout on number panel as buttons are added to numberpanel.
+    numberPanel.setLayout(numberPanelLayout);
+
+
+Since this is become a large program, we need to break it down to separate classes using inheritance
+
+import java.awt.Font;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+// NumberPanel is a Panel
+public class NumberPanel extends JPanel {
+	
+	// Constructor.
+	NumberPanel(){
+		// Create layout with 4 rows and colums to show the buttons
+		GridLayout numberPanelLayout = new GridLayout(4, 3);
+		// Note: You will be setting this layout on number panel as buttons are added to numberpanel.
+		numberPanel.setLayout(numberPanelLayout);
+		
+		// create 10 buttons
+		for(int i=0; i<10; i++) {
+			// setText method takes String data type and we have i here as Int
+			// Again we need to look for a method for converting a number in to string
+			// Looks like there exists one called Integer class
+			String buttonText = Integer.toString(i);
+			// Above method converts a Int data type to String type
+			// Input: number of data type Int
+			// Output: String data type
+			JButton numberButton = new JButton();
+			Font font = new Font("Serif", Font.BOLD, 66);
+			numberButton.setFont(font);
+			numberButton.setText(buttonText);
+			
+			// adding button to panel
+			numberPanel.add(numberButton); 
+		}
+	}
+}
+
+// Importing Color and other related classes
+import java.awt.*;
+//Importing Swing apis (JFrame,JPanel,JButton) classes
+import javax.swing.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+
+		
+		JFrame frame = new JFrame("Calculator");
+		frame.setSize(1000, 1000);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		NumberPanel numberPanel = new NumberPanel();
+		numberPanel.setBackground(Color.BLACK);
+		frame.add(numberPanel); 
+		
+		frame.setVisible(true);
+	}
+}

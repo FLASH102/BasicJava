@@ -1,0 +1,145 @@
+
+Normal method 
+
+public class Person {
+	
+	void eatFruit(int fruit) {
+		if (fruit == 1) {
+			System.out.println("eating Apple");
+		} else if (fruit == 2) {
+			System.out.println("eating Banana");
+		} else {
+			System.out.println("dont know");
+		}
+	}
+}
+
+public class Application {
+
+	public static void main(String[] args) {
+
+		Person p = new Person();
+		p.eatFruit(1);
+		p.eatFruit(2);
+		
+	}
+}
+
+-In the above program, you have to remember the specific fruit assigned to the number
+We need to change this so it's easier for us
+
+Modified:
+
+public class Fruit {
+	static int Apple=1;
+	static int Banana=2;
+}
+
+
+public class Application {
+
+	public static void main(String[] args) {
+
+		Person p = new Person();
+		p.eatFruit(Fruit.Apple);
+		p.eatFruit(Fruit.Banana);
+		
+	}
+}
+
+-Now, we can use the class to call on the object
+-This is similar to what we used in the Calculator
+
+    JFrame f = new JFrame();
+    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+-It calls on the JFrame.EXIT_ON_CLOSE class!
+-If you click on that, then you see you can also call on this class with the number 3
+So, 3 corresponds to EXIT_ON_CLOSE
+
+
+Enum:
+Go to new, and then press enum
+
+package enumlearn;
+
+public enum Fruit {
+	Apple,
+	Banana, //you can list as many as you want here
+}
+
+Lets add new method in Person class like below
+
+	void eatFruit(enumlearn.Fruit f) {
+		System.out.println("eating " + f);
+	}
+
+Lets use this method in Application class like below
+
+		Person p = new Person();
+		p.eatFruit(enumlearn.Fruit.Apple);
+		p.eatFruit(enumlearn.Fruit.Banana);
+
+Advantages of enum:
+Readability (now we know we are passing either Apple or Banana not 1 or 2)
+Also we cannot use invalid fruit (only things you can use are whatever defined in Fruit enum)
+
+
+
+
+Class within class:
+
+class Student{
+		String name;
+		int age;
+		int grade;
+		String addressLine1;
+		String addressLine2;
+		String city;
+		String zipCode;
+		String country;
+	}
+
+	class School{
+
+		// enrolling student in school
+		void enrollStudent(String name, int age, int grade, String addressLine1, string addressLine2, String city, string zipCode, String countr){
+			System.out.println("enrolling:" + name + " for grade:" + grade);
+		}
+
+	}
+
+This is taking too many inputs, so let's modify it
+
+
+class School{
+		void enrollStudent(Student s){
+			System.out.println("enrolling:" + s.name + " for grade:" + s.grade);
+		}
+	}
+
+class School{
+		void enrollStudent(Student s){
+			System.out.println("enrolling:" + s.name + " for grade:" + s.grade);
+		}
+	}
+
+-Now you include it in the application itself
+
+Using class as the datatype
+
+class Address{
+		String addressLine1;
+		String addressLine2;
+		String city;
+		String zipCode;
+		String country;
+	}
+
+// creating Address object
+	Address a = new Address();
+	a.addressLine1 = "17003 nw";
+	a.city = "beaverton";
+	a.zipcode = "97006";
+	a.country = "usa";
+

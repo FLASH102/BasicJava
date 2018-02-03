@@ -1,0 +1,5 @@
+package basicjava;
+
+public final class Student {
+
+}

@@ -1,0 +1,35 @@
+package basicjava;
+
+import java.awt.Color;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		JFrame f1 = new JFrame("Calculator");
+		f1.setSize(600, 800);
+		f1.setVisible(true);
+		f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		JPanel j1 = new JPanel();
+		j1.setSize(600, 400);
+		j1.setBackground(Color.CYAN);
+		j1.setLayout(new GridLayout(5,2));
+
+		for (int x = 1; x <= 10; x = x + 1) {
+			JButton b1 = new JButton(Integer.toString(x));
+			b1.setSize(100, 100);
+			b1.setBackground(Color.WHITE);
+			j1.add(b1);
+			
+		}
+
+		f1.add(j1);
+
+	}
+
+}

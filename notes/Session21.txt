@@ -38,7 +38,7 @@ Graphics:
 -When you run, nothing happens as this is just the frame, you have not done anything yet
 
 - Set size sets dimensions of window when opened (in pixels)
--Need setVisible, so that you can actually see the windown pop up
+-Need setVisible, so that you can actually see the window pop up
 
 public class Application{
     public static void main(String[] args){
