@@ -1,0 +1,29 @@
+package basicjava;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Result extends JPanel {
+	JTextField textfield = new JTextField(); // create text field object
+	JTextField t2 = new JTextField();
+
+	Result() {
+
+		// setBackground(Color.BLACK);
+
+		// textfield.setBackground(Color.WHITE);
+		textfield.setText("YOOOOOOOO DUDES");
+		Font font = new Font("Serif", Font.BOLD, 18);
+		textfield.setFont(font);
+		add(textfield);
+		
+		t2.setText("YOOOYOOYOYOYOYOYO");
+		Font font = new Font("Serif", Font.BOLD, 18);
+		textfield.setFont(font);
+		add(t2);
+	}
+
+	void setNumber(String number) {
+		textfield.setText(number);
+	}
+}

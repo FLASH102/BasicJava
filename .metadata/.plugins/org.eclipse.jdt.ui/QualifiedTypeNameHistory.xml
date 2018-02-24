@@ -9,4 +9,6 @@
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="java.awt.GridLayout"/>
 <fullyQualifiedTypeName name="enumtest.Fruit"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 </qualifiedTypeNameHistroy>

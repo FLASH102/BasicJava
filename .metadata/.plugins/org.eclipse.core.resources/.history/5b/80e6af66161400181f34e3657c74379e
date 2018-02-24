@@ -1,0 +1,43 @@
+package basicjava;
+
+import java.awt.*;
+
+import javax.swing.*;
+
+public class OperationPanel extends JPanel implements ActionListener{
+	Result resultpanel;
+
+	OperationPanel(Result resultpanel) {
+
+		// setBackground(Color.BLACK);
+		GridLayout operationLayout = new GridLayout(5, 1);
+		setLayout(operationLayout);
+
+		JButton o = new JButton();
+		o.setText("+");
+		Font font = new Font("Serif", Font.BOLD, 40);
+		o.setFont(font);
+
+		JButton o1 = new JButton();
+		o1.setText("-");
+		o1.setFont(font);
+
+		JButton o2 = new JButton();
+		o2.setText("*");
+		o2.setFont(font);
+
+		JButton o3 = new JButton();
+		o3.setText("/");
+		o3.setFont(font);
+
+		JButton o4 = new JButton();
+		o4.setText("=");
+		o4.setFont(font);
+
+		add(o);
+		add(o1);
+		add(o2);
+		add(o3);
+		add(o4);
+	}
+}

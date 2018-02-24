@@ -1,8 +1,0 @@
-package basicjava;
-
-import javax.swing.JPanel;
-
-public class OperationPanel extends JPanel{
-
-	
-}

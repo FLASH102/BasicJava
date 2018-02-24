@@ -1,6 +1,0 @@
-package basicjava;
-
-public class OperationPanel extends JPanel{
-
-	
-}

@@ -1,25 +1,54 @@
 package basicjava;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
 
-public class NumberPanel extends JPanel {
+public class NumberPanel extends JPanel implements ActionListener {
+Result resultpanel;
+	NumberPanel(Result resultpanel) {
+		this.resultpanel = resultpanel;
+		// setBackground(Color.BLACK);
+		GridLayout numberPanelLayout = new GridLayout(4, 3);
+		setLayout(numberPanelLayout);// notice here, you don't need fl.setLayout
+										// because it already extends JPanel
 
-	NumberPanel() {
-		setSize(600, 400);
-		setBackground(Color.CYAN);
-		GridLayout numberPanelLayout = new GridLayout(4,3);
-		setLayout(numberPanelLayout);
-
-		for (int x = 1; x <= 10; x = x + 1) {
+		for (int x = 0; x <= 9; x = x + 1) {// for loop adds all the numbers
 			JButton b1 = new JButton(Integer.toString(x));
 			b1.setSize(100, 100);
-			b1.setBackground(Color.WHITE);
-			Font font = new Font("Serif", Font.BOLD, 66);
+			b1.setBackground(Color.CYAN);
+			Font font = new Font("Serif", Font.BOLD, 40);// create object that sets the font, type, bold, and size
+															
 			b1.setFont(font);
-	
-			add(b1);
+			b1.addActionListener(this);// add the action below
+			add(b1);// add button to the panel
 
 		}
+		JButton n1 = new JButton();
+		n1.setText(".");
+		Font font = new Font("Serif", Font.BOLD, 40);
+		n1.setFont(font);
+		n1.setBackground(Color.pink);
+
+		JButton n = new JButton();
+		n.setText("(+/-)");
+		n.setFont(font);
+		n.setBackground(Color.pink);
+
+		n1.addActionListener(this);
+		n.addActionListener(this);
+		add(n1);
+		add(n);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		String value = arg0.getActionCommand();
+		resultpanel.setNumber(value);
+		//JOptionPane.showMessageDialog(null, "clicked " + value);// interface Action Listener- NumberPanel is interested in those methods
+																
+
 	}
 }

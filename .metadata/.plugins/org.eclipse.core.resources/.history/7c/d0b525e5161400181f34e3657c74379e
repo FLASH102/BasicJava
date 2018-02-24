@@ -1,0 +1,57 @@
+package basicjava;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class OperationPanel extends JPanel implements ActionListener {
+	Result resultpanel;
+
+	OperationPanel(Result resultpanel) {
+
+		// setBackground(Color.BLACK);
+		GridLayout operationLayout = new GridLayout(5, 1);
+		setLayout(operationLayout);
+
+		JButton o = new JButton();
+		o.setText("+");
+		Font font = new Font("Serif", Font.BOLD, 40);
+		o.setFont(font);
+		o.addActionListener(this);
+
+		JButton o1 = new JButton();
+		o1.setText("-");
+		o1.setFont(font);
+		o1.addActionListener(this);
+
+		JButton o2 = new JButton();
+		o2.setText("*");
+		o2.setFont(font);
+		o2.addActionListener(this);
+		
+		JButton o3 = new JButton();
+		o3.setText("/");
+		o3.setFont(font);
+		o3.addActionListener(this);
+
+		JButton o4 = new JButton();
+		o4.setText("=");
+		o4.setFont(font);
+		o4.addActionListener(this);
+
+		add(o);
+		add(o1);
+		add(o2);
+		add(o3);
+		add(o4);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		String value = arg0.getActionCommand();
+		resultpanel.setOperation(operation);
+		
+	}
+}
