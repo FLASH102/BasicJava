@@ -1,0 +1,28 @@
+1. RAM - Random Access Memory
+   CPU - Central Processing Unit
+2. Bit
+3. ASCII - American Standard Code I_________   I________
+4. You can learn the computer language and know how to code your own apps, or programs, or whatever you want. 
+5. Grammar
+6. Ex: ; () {}
+7. new, print, class
+8. Data types specfiy the type of variable used. 
+9. int, String
+Others: double, char, boolean
+10. A class is the "cookie box" or "recipe", where all of your own data types, objects, and methods are used.  Ex: Math class has math operation. Person class for Person data type. 
+11. Object is the variable. 
+12. Start/create a program:
+	1. Choose the class
+	2. Say, I am creating a method
+	3. Choose the method name
+	4. Add any inputs
+	5. Add the output data type (void for none, int for number)
+	6. Return 0, to test the program out
+	7. After the program works for 0 - add syntax and logic
+	8. Run the program! Make any changes as needed. 
+
+13. It is a program with an action. 
+14. Static doesn't use class variables. 
+15. Encapsulation - hiding the details (private) and packaging the related stuff.
+    Inheritance - reusing the class
+

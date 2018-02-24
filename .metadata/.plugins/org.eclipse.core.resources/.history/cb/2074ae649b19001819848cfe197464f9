@@ -3,14 +3,10 @@ public class Application {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-	int number = 5;
-	
-	if(number%2 == 1) {
-		System.out.println("Odd");	
-	}else {
-		System.out.println("Even");
-	}
+		
+ for(int x = 100; x < 0; x= x-2) {
+	 System.out.println(x);
+ }
 	}
 
 }
